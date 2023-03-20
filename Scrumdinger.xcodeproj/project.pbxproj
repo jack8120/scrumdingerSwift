@@ -14,7 +14,9 @@
 		053133A129C624EE0005F319 /* ScrumdingerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053133A029C624EE0005F319 /* ScrumdingerTests.swift */; };
 		053133AB29C624EE0005F319 /* ScrumdingerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053133AA29C624EE0005F319 /* ScrumdingerUITests.swift */; };
 		053133AD29C624EE0005F319 /* ScrumdingerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053133AC29C624EE0005F319 /* ScrumdingerUITestsLaunchTests.swift */; };
-		053133BA29C86C220005F319 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 053133B929C86C220005F319 /* .gitignore */; };
+		053133BD29C87AAA0005F319 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053133BC29C87AAA0005F319 /* Theme.swift */; };
+		053133BF29C87C370005F319 /* DailyScrum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053133BE29C87C370005F319 /* DailyScrum.swift */; };
+		053133C329C87E8A0005F319 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053133C229C87E8A0005F319 /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +47,9 @@
 		053133A629C624EE0005F319 /* ScrumdingerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrumdingerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		053133AA29C624EE0005F319 /* ScrumdingerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumdingerUITests.swift; sourceTree = "<group>"; };
 		053133AC29C624EE0005F319 /* ScrumdingerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumdingerUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		053133B929C86C220005F319 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		053133BC29C87AAA0005F319 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		053133BE29C87C370005F319 /* DailyScrum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyScrum.swift; sourceTree = "<group>"; };
+		053133C229C87E8A0005F319 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,9 +100,10 @@
 		0531338E29C624ED0005F319 /* Scrumdinger */ = {
 			isa = PBXGroup;
 			children = (
-				053133B929C86C220005F319 /* .gitignore */,
 				0531338F29C624ED0005F319 /* ScrumdingerApp.swift */,
+				053133C229C87E8A0005F319 /* CardView.swift */,
 				0531339129C624ED0005F319 /* MeetngView.swift */,
+				053133BB29C87A830005F319 /* Models */,
 				0531339329C624EE0005F319 /* Assets.xcassets */,
 				0531339529C624EE0005F319 /* Preview Content */,
 			);
@@ -128,6 +133,15 @@
 				053133AC29C624EE0005F319 /* ScrumdingerUITestsLaunchTests.swift */,
 			);
 			path = ScrumdingerUITests;
+			sourceTree = "<group>";
+		};
+		053133BB29C87A830005F319 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				053133BC29C87AAA0005F319 /* Theme.swift */,
+				053133BE29C87C370005F319 /* DailyScrum.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,7 +249,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0531339729C624EE0005F319 /* Preview Assets.xcassets in Resources */,
-				053133BA29C86C220005F319 /* .gitignore in Resources */,
 				0531339429C624EE0005F319 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,8 +274,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				053133BF29C87C370005F319 /* DailyScrum.swift in Sources */,
+				053133BD29C87AAA0005F319 /* Theme.swift in Sources */,
 				0531339229C624ED0005F319 /* MeetngView.swift in Sources */,
 				0531339029C624ED0005F319 /* ScrumdingerApp.swift in Sources */,
+				053133C329C87E8A0005F319 /* CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
